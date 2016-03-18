@@ -1,0 +1,130 @@
+import java.awt.EventQueue;$
+import java.awt.Font;$
+import java.awt.event.KeyAdapter;$
+import java.awt.event.KeyEvent;$
+import java.awt.event.MouseAdapter;$
+import java.awt.event.MouseEvent;$
+$
+import javax.swing.JButton;$
+import javax.swing.JFrame;$
+import javax.swing.JLabel;$
+import javax.swing.JOptionPane;$
+import javax.swing.JPanel;$
+import javax.swing.JPasswordField;$
+import javax.swing.JTextField;$
+import javax.swing.border.EmptyBorder;$
+$
+import com.Joke.util.JDOM;$
+$
+$
+public class LoginGUI extends JFrame {$
+^Iprivate static final long serialVersionUID = 4994949944841194839L;$
+^Iprivate JPanel contentPane;$
+^Iprivate JTextField IDtxt;$
+^Iprivate JLabel Passwdlabel;$
+^Iprivate JPasswordField passwordField;$
+^Iprivate JButton login;$
+^Iprivate JButton back;$
+$
+^I/**$
+^I * Launch the application.$
+^I * @return $
+^I */$
+^Ipublic void loginGUI() {$
+^I^IEventQueue.invokeLater(new Runnable() {$
+^I^I^Ipublic void run() {$
+^I^I^I^Itry {$
+^I^I^I^I^ILoginGUI frame = new LoginGUI();$
+^I^I^I^I^Iframe.setVisible(true);$
+^I^I^I^I} catch (Exception e) {$
+^I^I^I^I^Ie.printStackTrace();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I}$
+$
+^I/**$
+^I * Create the frame.$
+^I */$
+^Ipublic LoginGUI() {$
+^I^IsetDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);$
+^I^IsetBounds(100, 100, 650, 400);$
+^I^IcontentPane = new JPanel();$
+^I^IcontentPane.setBorder(new EmptyBorder(5, 5, 5, 5));$
+^I^IsetContentPane(contentPane);$
+^I^IcontentPane.setLayout(null);$
+^I^I$
+^I^IJLabel IDlabel = new JLabel("Please input ID");$
+^I^IIDlabel.setBounds(68, 170, 91, 39);$
+^I^IcontentPane.add(IDlabel);$
+^I^I$
+^I^IIDtxt = new JTextField();$
+^I^IIDtxt.setBounds(206, 179, 126, 21);$
+^I^IcontentPane.add(IDtxt);$
+^I^IIDtxt.setColumns(10);$
+^I^I$
+^I^IPasswdlabel = new JLabel("Please input password");$
+^I^IPasswdlabel.setBounds(68, 219, 150, 50);$
+^I^IcontentPane.add(Passwdlabel);$
+^I^I$
+^I^IpasswordField = new JPasswordField();$
+^I^IpasswordField.setBounds(206, 234, 126, 21);$
+^I^IcontentPane.add(passwordField);$
+^I^I$
+^I^Ilogin = new JButton("login");$
+^I$
+^I^Ilogin.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^I$
+^I^I^I^Ievent_login();$
+^I^I^I}$
+^I^I});$
+^I^Ilogin.addKeyListener(new KeyAdapter() {$
+^I^I^Ipublic void keyPressed(KeyEvent e)$
+^I^I^I{$
+^I^I^I^Iif(e.getKeyCode()==KeyEvent.VK_ENTER)$
+^I^I^I^I{$
+^I^I^I^I^Ievent_login();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I^Ilogin.setBounds(239, 310, 93, 23);$
+^I^IcontentPane.add(login);$
+^I^I$
+^I^Iback = new JButton("BACK");$
+^I^Iback.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^I IndexGUI.init();$
+^I^I^I^I setVisible(false);$
+^I^I^I}$
+^I^I});$
+^I^Iback.setBounds(507, 310, 93, 23);$
+^I^IcontentPane.add(back);$
+^I^I$
+^I^IJLabel label = new JLabel("Welcome to use KnowYou");$
+^I^Ilabel.setFont(new Font("����", Font.BOLD | Font.ITALIC, 30));$
+^I^Ilabel.setBounds(142, 54, 386, 35);$
+^I^IcontentPane.add(label);$
+^I}$
+^Iprivate void event_login()$
+^I{$
+^I^IString id=IDtxt.getText();$
+^I^IString passwd=new String(passwordField.getPassword());$
+^I^IString flag=JDOM.read(id, passwd);$
+^I^Iif(flag.contains("Successful landing"))$
+^I^I{$
+^I^I^I$
+^I^I^IString[] bufs=flag.split("/");$
+^I^I^IString name=bufs[1];$
+^I^I^IJOptionPane.showMessageDialog(contentPane, "Welcome "+name,"Welcome",JOptionPane.PLAIN_MESSAGE);$
+^I^I^IUsersGUI.init(name);$
+^I^I^IsetVisible(false);$
+^I^I}$
+^I^Ielse$
+^I^I{$
+^I^I^IJOptionPane.showMessageDialog(contentPane,flag,"ERROR",JOptionPane.ERROR_MESSAGE);$
+^I^I}$
+^I}$
+}$

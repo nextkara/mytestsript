@@ -1,0 +1,99 @@
+import java.awt.EventQueue;$
+import java.awt.Font;$
+import java.awt.event.KeyAdapter;$
+import java.awt.event.KeyEvent;$
+import java.awt.event.MouseAdapter;$
+import java.awt.event.MouseEvent;$
+$
+import javax.swing.JButton;$
+import javax.swing.JFrame;$
+import javax.swing.JLabel;$
+import javax.swing.JPanel;$
+import javax.swing.border.EmptyBorder;$
+$
+public class IndexGUI extends JFrame {$
+$
+^Iprivate static final long serialVersionUID = 5750378931932603900L;$
+^Iprivate JPanel contentPane;$
+^Iprivate static IndexGUI frame;$
+^Ipublic static void main(String[] args) {$
+^I^Iinit();$
+^I}$
+^Ipublic static void init()$
+^I{$
+^I^IEventQueue.invokeLater(new Runnable() {$
+^I^I^Ipublic void run() {$
+^I^I^I^Itry {$
+^I^I^I^I^Iframe = new IndexGUI();$
+^I^I^I^I^Iframe.setVisible(true);$
+^I^I^I^I} catch (Exception e) {$
+^I^I^I^I^Ie.printStackTrace();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I}$
+^Ipublic IndexGUI() {$
+^I^IsetTitle("KnowYou");$
+^I^IsetDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);$
+^I^IsetBounds(100, 100, 650, 400);$
+^I^IcontentPane = new JPanel();$
+^I^IcontentPane.setBorder(new EmptyBorder(5, 5, 5, 5));$
+^I^IsetContentPane(contentPane);$
+^I^IcontentPane.setLayout(null);$
+^I^I$
+^I^IJLabel lblNewLabel = new JLabel("Welcome to use KnowYou");$
+^I^IlblNewLabel.setBounds(132, 74, 386, 35);$
+^I^IlblNewLabel.setFont(new Font("黑体", Font.BOLD | Font.ITALIC, 30));$
+^I^IcontentPane.add(lblNewLabel);$
+^I^I$
+^I^IJButton login = new JButton("Login"); //登陆按钮$
+^I^Ilogin.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^Ievent_Login();$
+^I^I^I}$
+^I^I});$
+^I^I//增加键盘事件$
+^I^Ilogin.addKeyListener(new KeyAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void keyPressed(KeyEvent e) {$
+^I^I^I^Iif(e.getKeyCode()==KeyEvent.VK_ENTER)$
+^I^I^I^I{$
+^I^I^I^I^Ievent_Login();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I^Ilogin.setBounds(65, 263, 124, 45);$
+^I^IcontentPane.add(login);$
+^I^I$
+^I^IJButton register = new JButton("Sign Up"); //注册按钮$
+^I^Iregister.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^Ievent_register();$
+^I^I^I}$
+^I^I});$
+^I^Iregister.addKeyListener(new KeyAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void keyPressed(KeyEvent e) {$
+^I^I^I^Iif(e.getKeyCode()==KeyEvent.VK_ENTER)$
+^I^I^I^I{$
+^I^I^I^I^Ievent_register();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I^Iregister.setBounds(489, 263, 109, 45);$
+^I^IcontentPane.add(register);$
+^I^I$
+^I}$
+^Iprivate void event_Login()$
+^I{$
+^I^IsetVisible(false);$
+^I^Inew LoginGUI().loginGUI();$
+^I}$
+^Iprivate void event_register()$
+^I{$
+^I^Inew RegisterGUI().registerGUI();$
+^I^IsetVisible(false);$
+^I}$
+}$

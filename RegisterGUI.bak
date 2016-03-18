@@ -1,0 +1,139 @@
+import java.awt.EventQueue;$
+import java.awt.Font;$
+import java.awt.event.ActionEvent;$
+import java.awt.event.ActionListener;$
+import java.awt.event.MouseAdapter;$
+import java.awt.event.MouseEvent;$
+$
+import javax.swing.JButton;$
+import javax.swing.JFrame;$
+import javax.swing.JLabel;$
+import javax.swing.JOptionPane;$
+import javax.swing.JPanel;$
+import javax.swing.JTextField;$
+import javax.swing.border.EmptyBorder;$
+$
+import com.Joke.util.Register;$
+$
+public class RegisterGUI extends JFrame {$
+$
+^Iprivate static final long serialVersionUID = 3250371445038102261L;$
+^Iprivate JPanel contentPane;$
+^Iprivate JTextField nametext;$
+^Iprivate JTextField IDtext;$
+^Iprivate JTextField passwdtext;$
+$
+^I/**$
+^I * Launch the application.$
+^I */$
+^Ipublic void registerGUI() {$
+^I^IEventQueue.invokeLater(new Runnable() {$
+^I^I^Ipublic void run() {$
+^I^I^I^Itry {$
+^I^I^I^I^IRegisterGUI frame = new RegisterGUI();$
+^I^I^I^I^Iframe.setVisible(true);$
+^I^I^I^I} catch (Exception e) {$
+^I^I^I^I^Ie.printStackTrace();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I}$
+$
+^I/**$
+^I * Create the frame.$
+^I */$
+^Ipublic RegisterGUI() {$
+^I^IsetDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);$
+^I^IsetBounds(100, 100, 650, 400);$
+^I^IcontentPane = new JPanel();$
+^I^IcontentPane.setBorder(new EmptyBorder(5, 5, 5, 5));$
+^I^IsetContentPane(contentPane);$
+^I^IcontentPane.setLayout(null);$
+$
+^I^IJLabel namelabel = new JLabel("Please input user name");$
+^I^Inamelabel.setBounds(102, 91, 151, 23);$
+^I^IcontentPane.add(namelabel);$
+$
+^I^IJLabel IDlabel = new JLabel("Please input user ID");$
+^I^IIDlabel.setBounds(102, 160, 151, 23);$
+^I^IcontentPane.add(IDlabel);$
+$
+^I^IJLabel passwdlaber = new JLabel("Please input user password");$
+^I^Ipasswdlaber.setBounds(102, 224, 163, 23);$
+^I^IcontentPane.add(passwdlaber);$
+$
+^I^Inametext = new JTextField();$
+^I^Inametext.setBounds(271, 92, 92, 21);$
+^I^IcontentPane.add(nametext);$
+^I^Inametext.setColumns(10);$
+$
+^I^IIDtext = new JTextField();$
+^I^IIDtext.setBounds(271, 161, 92, 21);$
+^I^IcontentPane.add(IDtext);$
+^I^IIDtext.setColumns(8);$
+$
+^I^Ipasswdtext = new JTextField();$
+^I^Ipasswdtext.setBounds(271, 225, 92, 21);$
+^I^IcontentPane.add(passwdtext);$
+^I^Ipasswdtext.setColumns(10);$
+$
+^I^IJButton register = new JButton("Sign Up");$
+^I^Iregister.addMouseListener(new MouseAdapter() {$
+^I^I^I@SuppressWarnings("static-access")$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^IString name = nametext.getText();$
+^I^I^I^IString ID = IDtext.getText();$
+^I^I^I^IString passwd = passwdtext.getText();$
+^I^I^I^Iif (Register.checkID(ID) == null) {$
+^I^I^I^I^Iif (Register.checkPasswd(passwd) == null) {$
+^I^I^I^I^I^IString srt = Register.register(name, passwd, ID);$
+^I^I^I^I^I^IJOptionPane.showMessageDialog(contentPane, srt,$
+^I^I^I^I^I^I^I^I"information", JOptionPane.PLAIN_MESSAGE);$
+^I^I^I^I^I^IsetVisible(false);$
+^I^I^I^I^I^I new IndexGUI().init();$
+^I^I^I^I^I$
+^I^I^I^I^I} else {$
+^I^I^I^I^I^IJOptionPane.showMessageDialog(contentPane,$
+^I^I^I^I^I^I^I^IRegister.checkPasswd(passwd), "ERROR",$
+^I^I^I^I^I^I^I^IJOptionPane.ERROR_MESSAGE);$
+^I^I^I^I^I}$
+^I^I^I^I} else {$
+^I^I^I^I^IJOptionPane.showMessageDialog(contentPane,$
+^I^I^I^I^I^I^IRegister.checkID(ID), "ERROR",$
+^I^I^I^I^I^I^IJOptionPane.ERROR_MESSAGE);$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I^Iregister.setBounds(321, 305, 93, 23);$
+^I^IcontentPane.add(register);$
+$
+^I^IJButton back = new JButton("BACK");$
+^I^Iback.addActionListener(new ActionListener() {$
+^I^I^Ipublic void actionPerformed(ActionEvent e) {$
+^I^I^I}$
+^I^I});$
+^I^Iback.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^IIndexGUI.init();$
+^I^I^I^IsetVisible(false);$
+^I^I^I}$
+^I^I});$
+^I^Iback.setBounds(531, 305, 93, 23);$
+^I^IcontentPane.add(back);$
+$
+^I^IJLabel label = new JLabel("Welcome to use KnowYou");$
+^I^Ilabel.setFont(new Font("ºÚÌå", Font.BOLD | Font.ITALIC, 30));$
+^I^Ilabel.setBounds(143, 26, 374, 35);$
+^I^IcontentPane.add(label);$
+$
+^I^IJLabel lblNewLabel = new JLabel("(There are 1 to 8 numbers)");$
+^I^IlblNewLabel.setBounds(373, 164, 163, 15);$
+^I^IcontentPane.add(lblNewLabel);$
+$
+^I^IJLabel lblNewLabel_1 = new JLabel("(There are 6 to 15 numbers)");$
+^I^IlblNewLabel_1.setBounds(373, 228, 163, 15);$
+^I^IcontentPane.add(lblNewLabel_1);$
+^I}$
+}$

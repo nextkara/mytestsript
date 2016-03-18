@@ -1,0 +1,193 @@
+import java.awt.Color;$
+import java.awt.EventQueue;$
+import java.awt.Font;$
+import java.awt.event.ActionEvent;$
+import java.awt.event.ActionListener;$
+import java.awt.event.MouseAdapter;$
+import java.awt.event.MouseEvent;$
+import java.io.BufferedReader;$
+import java.io.File;$
+import java.io.FileReader;$
+$
+import javax.swing.JButton;$
+import javax.swing.JEditorPane;$
+import javax.swing.JFileChooser;$
+import javax.swing.JFrame;$
+import javax.swing.JInternalFrame;$
+import javax.swing.JLabel;$
+import javax.swing.JOptionPane;$
+import javax.swing.JPanel;$
+import javax.swing.JTabbedPane;$
+import javax.swing.JTextField;$
+import javax.swing.JTextPane;$
+import javax.swing.border.EmptyBorder;$
+import javax.swing.filechooser.FileNameExtensionFilter;$
+$
+import com.Joke.util.Diary;$
+$
+public class UsersGUI extends JFrame {$
+$
+^Iprivate static final long serialVersionUID = -3130465509415076348L;$
+^Iprivate JPanel contentPane;$
+^Iprivate JTextField textField;$
+^Iprivate JFileChooser chooser;$
+^Iprivate static String pathname;$
+$
+^Ipublic static void init(String path) {$
+^I^Ipathname = path;$
+^I^IEventQueue.invokeLater(new Runnable() {$
+^I^I^Ipublic void run() {$
+^I^I^I^Itry {$
+^I^I^I^I^IUsersGUI frame = new UsersGUI();$
+^I^I^I^I^Iframe.setVisible(true);$
+^I^I^I^I} catch (Exception e) {$
+^I^I^I^I^Ie.printStackTrace();$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I}$
+$
+^I/**$
+^I * Create the frame.$
+^I */$
+^Ipublic UsersGUI() {$
+^I^IsetDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);$
+^I^IsetBounds(100, 100, 600, 400);$
+^I^IcontentPane = new JPanel();$
+^I^IcontentPane.setBorder(new EmptyBorder(5, 5, 5, 5));$
+^I^IsetContentPane(contentPane);$
+^I^IcontentPane.setLayout(null);$
+$
+^I^IJTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);$
+^I^ItabbedPane.setToolTipText("KonwYou");$
+^I^ItabbedPane.setBounds(0, 0, 574, 67);$
+^I^IcontentPane.add(tabbedPane);$
+$
+^I^Ifinal JPanel panel = new JPanel();$
+^I^ItabbedPane.addTab("Management Journal", null, panel, null);$
+$
+^I^Ichooser = new JFileChooser(".\\"+pathname);//��ʼ��JFileChooser��������Ĭ��Ŀ¼Ϊ�û�Ŀ¼$
+^I^IFileNameExtensionFilter filter=new FileNameExtensionFilter("Allowed","ky");//�ļ�ѡ������ֻ����ѡ��.ky�ļ�$
+^I^Ichooser.setFileFilter(filter);//Ϊ�ļ�����ѡ����$
+$
+^I^IJButton readButton = new JButton("Read the diary");$
+^I^IreadButton.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^Iint value = chooser.showOpenDialog(panel);$
+^I^I^I^IJInternalFrame internalFrame_Read = new JInternalFrame("Read the diary",$
+^I^I^I^I^I^Ifalse, true, false, false);$
+^I^I^I^IinternalFrame_Read.setBounds(0, 77, 584, 275);$
+^I^I^I^IcontentPane.add(internalFrame_Read);$
+^I^I^I^IinternalFrame_Read.getContentPane().setLayout(null);$
+^I^I^I^IJTextPane txtDiary = new JTextPane();$
+^I^I^I^ItxtDiary.setBounds(0, 0, 568, 246);$
+^I^I^I^IinternalFrame_Read.getContentPane().add(txtDiary);$
+^I^I^I^Ijavax.swing.text.Document doc=txtDiary.getDocument();//JTextPaneû��append����������ʹ��Document�����ϲ����ı�$
+^I^I^I^ItxtDiary.setBackground(Color.GREEN);$
+^I^I^I^I$
+^I^I^I^Iif (value == JFileChooser.APPROVE_OPTION) {$
+^I^I^I^I^IFile file = chooser.getSelectedFile();$
+^I^I^I^I^Iif(file.exists())$
+^I^I^I^I^I{$
+^I^I^I^I^I^I$
+^I^I^I^I^Itry {$
+^I^I^I^I^I^IString txt=null;$
+^I^I^I^I^I^IBufferedReader bufr = new BufferedReader(new FileReader(file));$
+^I^I^I^I^I^IString line= System.getProperty("line.separator");//��ȡ���з�$
+^I^I^I^I^I^Iwhile((txt=bufr.readLine())!=null)$
+^I^I^I^I^I^I{$
+^I^I^I^I^I^I^I$
+^I^I^I^I^I^I^Idoc.insertString(doc.getLength(), txt+line, null);$
+^I^I^I^I^I^I^I$
+^I^I^I^I^I^I}$
+^I^I^I^I^I^I$
+^I^I^I^I^I^ItxtDiary.setEditable(false);//����Ϊ���ɱ༭$
+^I^I^I^I^I} catch (Exception e1) {$
+^I^I^I^I^I^I// TODO Auto-generated catch block$
+^I^I^I^I^I^Ie1.printStackTrace();$
+^I^I^I^I^I}$
+^I^I^I^I^I$
+^I^I^I^I^IinternalFrame_Read.setVisible(true);$
+^I^I^I^I^I}$
+^I^I^I^I}$
+^I^I^I}$
+^I^I});$
+^I^Ipanel.add(readButton);$
+$
+^I^IJButton addButton = new JButton("Create a diary");$
+^I^IaddButton.addMouseListener(new MouseAdapter() {$
+^I^I^I@Override$
+^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^Ifinal JInternalFrame internalFrame_Write = new JInternalFrame("Create a diary",$
+^I^I^I^I^I^Ifalse, true, false, false);$
+^I^I^I^IinternalFrame_Write.setBounds(0, 77, 584, 275);$
+^I^I^I^IcontentPane.add(internalFrame_Write);$
+^I^I^I^IinternalFrame_Write.getContentPane().setLayout(null);$
+$
+^I^I^I^ItextField = new JTextField();$
+^I^I^I^ItextField.setBounds(76, 0, 492, 21);$
+^I^I^I^IinternalFrame_Write.getContentPane().add(textField);$
+^I^I^I^ItextField.setColumns(10);$
+$
+^I^I^I^IJLabel label = new JLabel("Title");$
+^I^I^I^Ilabel.setFont(new Font("����", Font.PLAIN, 12));$
+^I^I^I^Ilabel.setBounds(46, 3, 52, 15);$
+^I^I^I^IinternalFrame_Write.getContentPane().add(label);$
+$
+^I^I^I^Ifinal JEditorPane editorPane = new JEditorPane();$
+^I^I^I^IeditorPane.setBounds(0, 31, 568, 179);$
+^I^I^I^IinternalFrame_Write.getContentPane().add(editorPane);$
+$
+^I^I^I^IJButton save = new JButton("SAVE");$
+^I^I^I^Isave.setBounds(465, 213, 93, 23);$
+^I^I^I^Isave.addMouseListener(new MouseAdapter() {$
+^I^I^I^I^Ipublic void mouseClicked(MouseEvent e) {$
+^I^I^I^I^I^IString title = textField.getText();$
+^I^I^I^I^I^IString txt = editorPane.getText();$
+^I^I^I^I^I^IDiary.addDiary(pathname, title, txt);$
+^I^I^I^I^I^IinternalFrame_Write.setVisible(false);$
+^I^I^I^I^I}$
+^I^I^I^I});$
+^I^I^I^IinternalFrame_Write.getContentPane().add(save);$
+^I^I^I^IinternalFrame_Write.setVisible(true);$
+$
+^I^I^I}$
+^I^I});$
+^I^Ipanel.add(addButton);$
+$
+^I^IJButton delButton = new JButton("Delete");$
+^I^IdelButton.addActionListener(new ActionListener() {$
+^I^I^Ipublic void actionPerformed(ActionEvent e) {$
+^I^I^I^IFile file=null;$
+^I^I^I^Ichooser.setMultiSelectionEnabled(true);//���ö�ѡ$
+^I^I^I^Iint value=chooser.showOpenDialog(panel);$
+^I^I^I^Iif(value==JFileChooser.APPROVE_OPTION)$
+^I^I^I^I{$
+^I^I^I^I^Ifile=chooser.getSelectedFile();$
+^I^I^I^I^Iint x=JOptionPane.showConfirmDialog(panel,"Confirm delete?","Please confirm",JOptionPane.OK_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE);$
+^I^I^I^I^Iif(file.exists())$
+^I^I^I^I^I{$
+^I^I^I^I^I^Iif(x==JOptionPane.OK_OPTION)$
+^I^I^I^I^I^I{$
+^I^I^I^I^I^I^Ifile.delete();$
+^I^I^I^I^I^I}$
+^I^I^I^I^I$
+^I^I^I^I^I}$
+^I^I^I^I^I$
+^I^I^I^I}$
+^I^I^I^I$
+^I^I^I}$
+^I^I});$
+^I^Ipanel.add(delButton);$
+$
+^I^IJButton back = new JButton("BACK");$
+^I^Iback.addActionListener(new ActionListener() {$
+^I^I^Ipublic void actionPerformed(ActionEvent e) {$
+^I^I^I^IIndexGUI.init();$
+^I^I^I^IsetVisible(false);$
+^I^I^I}$
+^I^I});$
+^I^Ipanel.add(back);$
+^I}$
+}$
