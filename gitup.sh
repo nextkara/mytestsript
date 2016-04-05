@@ -13,5 +13,4 @@ echo "Please wait 3 seconds..."
 sleep 3
 git add .
 git commit -m "$CHANGE"
-git push 
-
+git push

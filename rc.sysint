@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+. /etc/rc.d/init.d/functions
+
+echo -e "\tWelcome To my \033[34mMiniSystem\033[0m"
+echo "Remount rootfs ..."
+mount -n -o remount,rw /
+[ $? -eq 0 ] && success "mount othess filesystem" || failure "mount othes filesystem"
+#set hostname
+[ -f /etc/sysconfig/network ] && . /etc/sysconfig/network
+[ -z $HOSTNAME -o "$HOSTNAME" == '(none)' ] && HOSTNAME=localhost
+/bin/hostname $HOSTNAME
+[ $? -eq 0 ] && success "Set the hostname"||failure "set the hostname"
+#Initializing network device ...
+/sbin/insmod /lib/modules/mii.ko
+/sbin/insmod /lib/modules/pcnet32.ko
+[ $? -eq 0 ] && "Initializing network service..." || failure "Initializing network device"
+ifconfig lo 127.0.0.1/8
+[ $? -eq 0 ] && success "Activating loopback network device : || failure " Activating loopback network device"
+#set kernel
+sysctl -p &> /dev/null
+[ $? -eq 0 ] && success "set kernel paramate" || failure "set kernel paramate"

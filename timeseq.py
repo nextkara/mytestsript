@@ -22,7 +22,7 @@ def genExpr():
 def genFunc():
     def gen():
         for x in repslist:
-	    yield abs(x)
+            yield abs(x)
     return list(gen())
 print(sys.version)
 for test in (forLoop, listComp, mapCall, genExpr, genFunc):
