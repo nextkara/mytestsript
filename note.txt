@@ -1,0 +1,7 @@
+#创建rsa密钥并且保存在.ssh/rd_rsa
+ssh-keygen -t rsa
+#复制公钥到服务器端并自动保存为.ssh/authorized_key
+ssh-copy-id -i ~/.ssh/id_rsa.pub
+#复制文件到服务器端
+scp /local/file root@192.168.3.102:/root/directory/for/file
+
