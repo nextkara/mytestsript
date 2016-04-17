@@ -17,9 +17,17 @@ class Person:
         'fix a error in this part--version 1.2.1'
         return '[Person : %s %s ]' % (self.name, self.pay)
 class Manager(Person):
-    def __init__(self):
-        'version 1.5.1'
+    '''
+    这里存在问题，作为嵌入模块的话，之后的类方法的引用方式要修改
+    '''
+    def __init__(self, name, pay):
+        '''
+        'version 1.5.1'#输入变量的时候存在问题 job = 'mgr'
         Person.__init__(self, name, job = 'mgr', pay)
+        '''
+        'version 1.5.2'
+        Person.__init__(self, name, 'mgr', pay)
+    
     'version 1.3'
     def giveRaise(self, percent, bonus=.10):
         '''
@@ -34,7 +42,7 @@ class Manager(Person):
     def __str__(self):
         'version 1.4.1'
         return '[Manager imformation: %s %s ]' % (self.name, self.pay)
-    def giveRaise(self, percent = 0.1):
+    def giveRaise(self, percent = 0.05):
         'version 1.4.2'
         self.pay = int(self.pay * (1 + percent))
 
@@ -62,11 +70,12 @@ if __name__ == '__main__':
     #tom = Manager('Tom Jonse', job = 'mgr', pay = 2000)
     'version 1.5.1'
     tom = Manager('Tom Jonse', 2000)
-    tom.giveRaise(.10)
+    #tom.giveRaise(.10)没有修改加薪比例，自动赋值为0.05的加薪比例，为Manager特有的定制方法
+    tom.giveRaise()
     print(tom.lastName())
     print(tom)
     'version 1.3'
-    print('---All three---')
+    print('---All Imformation---')#change three to Imformation :) version 1.5.3
     for object in (bob, sue, tom):
         object.giveRaise(.10)
         print(object)
@@ -83,5 +92,36 @@ if __name__ == '__main__':
     print(sue.name, sue.pay)
     sue.pay *= 1.10
     print(sue.pay)
+    ---first run---
+    Bob Smith 500
+    Smith Jones
+    1100
+    This is Manager's lastName
+    Jonse
+    [Manager imformation: Tom Jonse 0 ]
+    ---All three---
+    [Person : Bob Smith 550 ]
+    [Person : Sue Jones 1210 ]
+    [Manager imformation: Tom Jonse 0 ]
+    [Person : Bob Smith 605 ]
+    [Person : Sue Jones 1331 ]
+    [Manager imformation: Tom Jonse 0 ]
+    -------
+    ---second run---
+    Bob Smith 500
+    Smith Jones
+    1100
+    This is Manager's lastName
+    Jonse
+    [Manager imformation: Tom Jonse 2200 ]
+    ---All three---
+    [Person : Bob Smith 550 ]
+    [Person : Sue Jones 1210 ]
+    [Manager imformation: Tom Jonse 2420 ]
+    [Person : Bob Smith 605 ]
+    [Person : Sue Jones 1331 ]
+    [Manager imformation: Tom Jonse 2662 ]
+    -------
+    
     '''
-        
+    
