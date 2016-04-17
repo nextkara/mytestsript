@@ -6,7 +6,7 @@ class AttrDisplay:
             attrs.append('%s = %s ' % (key, getattr(self, key)))
         return ', '.join(attrs)
     def __str__(self):
-        return '[%s %s]' % (self.__class__.__name__, self.gatherAttrs())
+        return '[%s: %s]' % (self.__class__.__name__, self.gatherAttrs())
 if __name__ == '__main__':
     class TopTest(AttrDisplay):
         count = 0
@@ -15,7 +15,11 @@ if __name__ == '__main__':
             self.attrs2 = TopTest.count + 1
             TopTest.count += 2
     class SubTest(TopTest):
-        pass
+        def __init__(self):
+            self.attrs2 = SubTest.count + 3
+            SubTest.count += 1
+            
+            #重新定义的方法会覆盖原来已经定义过的方法
     X, Y = TopTest(), SubTest()
     print(X)
     print(Y)
