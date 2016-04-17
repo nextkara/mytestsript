@@ -1,0 +1,111 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            1c:cf:7a:fd:63:39:40:91:6d:36:ed:d8:cc:a4:83:dc
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Class 3 Secure Server CA - G4
+        Validity
+            Not Before: Sep 17 00:00:00 2015 GMT
+            Not After : Aug 31 23:59:59 2016 GMT
+        Subject: C=CN, ST=Beijing, L=Beijing, O=Beijing Baidu Netcom Science Technology Co., Ltd., OU=service operation department, CN=baidu.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a8:72:cf:eb:76:51:bb:01:1e:16:51:1c:0e:64:
+                    5b:26:59:f5:5b:82:20:16:3e:77:78:62:c0:e2:f6:
+                    53:1e:09:2d:62:b4:27:07:3a:5d:9b:9a:3c:04:2f:
+                    69:0b:1e:64:99:a6:f0:e6:d8:6c:82:7e:0a:00:72:
+                    c1:8c:27:9e:f2:b2:6b:6c:06:65:50:a0:b3:0d:2a:
+                    fa:df:fb:ac:f4:32:61:ac:a7:59:3b:2c:82:18:c0:
+                    fb:d7:00:0e:d8:08:7e:53:1e:df:b0:a4:eb:ee:30:
+                    28:27:eb:c5:dd:82:c5:20:73:2e:5e:40:51:ed:e6:
+                    27:72:ea:c0:24:9a:5d:c2:f8:1b:b0:61:25:be:5e:
+                    2f:bb:1c:11:d6:a0:d1:f0:30:07:c5:28:4a:5a:4c:
+                    24:23:b2:40:68:74:3b:ed:93:d7:87:12:26:c4:01:
+                    0f:0a:09:68:74:1c:5d:18:a9:b2:6b:d7:4e:b2:ec:
+                    36:0b:92:b8:c6:b6:9e:ca:4e:59:bd:26:79:d2:95:
+                    e1:69:2d:e8:4a:ac:2c:44:d1:c6:33:ab:7e:6f:d9:
+                    2a:72:e0:3b:64:cb:ab:1b:d3:05:db:c6:76:8a:ee:
+                    6b:14:2a:ef:59:48:2a:3d:0b:93:dd:6e:72:2e:a3:
+                    eb:d0:3b:89:0d:8a:92:55:dd:02:89:c4:93:2e:cf:
+                    ce:af
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Alternative Name: 
+                DNS:*.baidu.com, DNS:*.nuomi.com, DNS:*.hao123.com, DNS:*.bdstatic.com, DNS:www.baidu.com.cn, DNS:www.baidu.cn, DNS:sapi.map.baidu.com, DNS:loc.map.baidu.com, DNS:log.hm.baidu.com, DNS:baidu.com, DNS:api.map.baidu.com, DNS:console.bce.baidu.com, DNS:login.bce.baidu.com
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                  CPS: https://d.symcb.com/cps
+                  User Notice:
+                    Explicit Text: https://d.symcb.com/rpa
+
+            X509v3 Authority Key Identifier: 
+                keyid:5F:60:CF:61:90:55:DF:84:43:14:8A:60:2A:B2:F5:7A:F4:43:18:EF
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ss.symcb.com/ss.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://ss.symcd.com
+                CA Issuers - URI:http://ss.symcb.com/ss.crt
+
+    Signature Algorithm: sha256WithRSAEncryption
+         76:af:46:03:3b:bd:d8:9f:3e:2b:62:48:dd:8d:89:32:07:49:
+         20:20:07:4e:33:c2:25:4f:be:b8:e3:62:85:22:9f:6b:8b:7f:
+         0b:cc:7f:3f:42:a4:5f:e0:6f:44:9e:9c:38:71:49:2f:9e:00:
+         98:76:f8:66:17:ba:ed:ba:82:1a:53:98:9c:04:a3:8a:6c:ff:
+         3b:4f:ff:57:eb:50:9d:44:cb:c8:18:79:1a:20:9f:f4:19:cf:
+         5d:ac:b4:5f:0c:59:bb:0f:b1:8f:75:9a:09:43:54:49:13:5a:
+         07:84:d5:48:96:57:f3:5c:80:41:b9:68:9b:80:1e:95:bb:b5:
+         8f:6b:1c:5a:e0:96:96:4c:f0:ac:10:37:87:f4:26:f6:5f:6b:
+         e1:13:78:e3:e5:2d:cc:de:4a:47:5d:21:20:be:d8:61:ab:aa:
+         2f:3e:ed:3b:b0:52:b3:2a:79:6e:f8:90:e4:45:07:0e:92:4a:
+         44:35:5b:9e:78:0c:bd:07:38:4a:0f:ef:43:59:94:81:bb:b8:
+         65:c9:d0:88:d3:7c:1b:8f:09:dc:b7:1f:2e:f0:fd:26:6a:d5:
+         62:00:70:b6:2a:da:68:e5:a3:e7:2d:95:e8:71:eb:82:91:40:
+         f3:e4:db:34:1a:a2:26:8d:a6:a4:bf:51:28:ef:97:9d:55:23:
+         37:b8:ac:f8
+-----BEGIN CERTIFICATE-----
+MIIF5DCCBMygAwIBAgIQHM96/WM5QJFtNu3YzKSD3DANBgkqhkiG9w0BAQsFADB+
+MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAd
+BgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxLzAtBgNVBAMTJlN5bWFudGVj
+IENsYXNzIDMgU2VjdXJlIFNlcnZlciBDQSAtIEc0MB4XDTE1MDkxNzAwMDAwMFoX
+DTE2MDgzMTIzNTk1OVowgagxCzAJBgNVBAYTAkNOMRAwDgYDVQQIDAdCZWlqaW5n
+MRAwDgYDVQQHDAdCZWlqaW5nMTowOAYDVQQKDDFCZWlqaW5nIEJhaWR1IE5ldGNv
+bSBTY2llbmNlIFRlY2hub2xvZ3kgQ28uLCBMdGQuMSUwIwYDVQQLDBxzZXJ2aWNl
+IG9wZXJhdGlvbiBkZXBhcnRtZW50MRIwEAYDVQQDDAliYWlkdS5jb20wggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCocs/rdlG7AR4WURwOZFsmWfVbgiAW
+Pnd4YsDi9lMeCS1itCcHOl2bmjwEL2kLHmSZpvDm2GyCfgoAcsGMJ57ysmtsBmVQ
+oLMNKvrf+6z0MmGsp1k7LIIYwPvXAA7YCH5THt+wpOvuMCgn68XdgsUgcy5eQFHt
+5idy6sAkml3C+BuwYSW+Xi+7HBHWoNHwMAfFKEpaTCQjskBodDvtk9eHEibEAQ8K
+CWh0HF0YqbJr106y7DYLkrjGtp7KTlm9JnnSleFpLehKrCxE0cYzq35v2Spy4Dtk
+y6sb0wXbxnaK7msUKu9ZSCo9C5PdbnIuo+vQO4kNipJV3QKJxJMuz86vAgMBAAGj
+ggIxMIICLTCB5gYDVR0RBIHeMIHbggsqLmJhaWR1LmNvbYILKi5udW9taS5jb22C
+DCouaGFvMTIzLmNvbYIOKi5iZHN0YXRpYy5jb22CEHd3dy5iYWlkdS5jb20uY26C
+DHd3dy5iYWlkdS5jboISc2FwaS5tYXAuYmFpZHUuY29tghFsb2MubWFwLmJhaWR1
+LmNvbYIQbG9nLmhtLmJhaWR1LmNvbYIJYmFpZHUuY29tghFhcGkubWFwLmJhaWR1
+LmNvbYIVY29uc29sZS5iY2UuYmFpZHUuY29tghNsb2dpbi5iY2UuYmFpZHUuY29t
+MAkGA1UdEwQCMAAwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMB
+BggrBgEFBQcDAjBhBgNVHSAEWjBYMFYGBmeBDAECAjBMMCMGCCsGAQUFBwIBFhdo
+dHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZGhdodHRwczovL2Qu
+c3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBRfYM9hkFXfhEMUimAqsvV69EMY7zAr
+BgNVHR8EJDAiMCCgHqAchhpodHRwOi8vc3Muc3ltY2IuY29tL3NzLmNybDBXBggr
+BgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9zcy5zeW1jZC5jb20wJgYI
+KwYBBQUHMAKGGmh0dHA6Ly9zcy5zeW1jYi5jb20vc3MuY3J0MA0GCSqGSIb3DQEB
+CwUAA4IBAQB2r0YDO73Ynz4rYkjdjYkyB0kgIAdOM8IlT76442KFIp9ri38LzH8/
+QqRf4G9Enpw4cUkvngCYdvhmF7rtuoIaU5icBKOKbP87T/9X61CdRMvIGHkaIJ/0
+Gc9drLRfDFm7D7GPdZoJQ1RJE1oHhNVIllfzXIBBuWibgB6Vu7WPaxxa4JaWTPCs
+EDeH9Cb2X2vhE3jj5S3M3kpHXSEgvthhq6ovPu07sFKzKnlu+JDkRQcOkkpENVue
+eAy9BzhKD+9DWZSBu7hlydCI03wbjwnctx8u8P0matViAHC2Ktpo5aPnLZXoceuC
+kUDz5Ns0GqImjaakv1Eo75edVSM3uKz4
+-----END CERTIFICATE-----
