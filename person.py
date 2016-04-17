@@ -21,9 +21,10 @@ class Manager(Person):
         
     def __str__(self):
         'version 1.2'
-        return '[Person : %s %s ]'.%(self.name, self.pay)
+        'fix a error in this part--version 1.2.1'
+        return '[Person : %s %s ]' % (self.name, self.pay)
     
-    if __init__ == '__main__':
+    if __name__ == '__main__':
         bob = Person('Bob Smith')
         sue = Person('Sue Jones',job = 'Tech', pay = 1000)
         print(bob.name, bob.pay)
@@ -33,6 +34,7 @@ class Manager(Person):
         print(sue.pay)
         '''
         version 1.0
+        'cut this part'
         print(sue.name, sue.pay)
         sue.pay *= 1.10
         print(sue.pay)
