@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import shelve
 class Display:
     def showNote(self):
         attrs = []
@@ -26,15 +27,22 @@ class InputChoice:
         elif choices == 3: 
             exit()
     def addNote(self):
+        noteadd = {}
         print('your title:')
-        title = input()
+        newtilte = input()
         print('your note:')
         newnote = input()
-    def update(self):
+        noteadd[newtilte] = newnote
+        return noteadd
+    def update(self,):
         print('your title:')
-        titleNo = input()
-        if type(titleNo) is str:
-            self.key = titleNo
+        title = input()
+        
+        if type(title) is str:
+            print('your title is : %s  \n and your note is :\n %s' % ( title, db[title] ) )
+            print('enter your new note:')
+            newnote = input()
+            db[title] = newnote
         else:
             print('nothing to do')
             self.update()
