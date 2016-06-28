@@ -1,9 +1,16 @@
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
+<<<<<<< HEAD
     "version": "1.0",
     "command": "bash",
     "isShellCommand": true,
     "args": ["Bash strip"],
+=======
+    "version": "3.5.1",
+    "command": "python",
+    "isShellCommand": true,
+    "args": ["Hello World"],
+>>>>>>> 444f02ceb87b11d56b05fcb7cddcb38d306b9c2e
     "showOutput": "always"
 }

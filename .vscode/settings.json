@@ -1,5 +1,10 @@
 // Place your settings in this file to overwrite default and user settings.
 {
+<<<<<<< HEAD
     "editor.fontSize": 17
     "editor.fontFamily": "Droid Sans Mono"
+=======
+    "editor.fontFamily": "Consolas"
+    "editor.fontSize": 17
+>>>>>>> 444f02ceb87b11d56b05fcb7cddcb38d306b9c2e
 }
