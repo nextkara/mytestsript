@@ -1,0 +1,344 @@
+[2016-05-12 12:24:39,365] 
+[2016-05-12 12:24:39,365] 
+[2016-05-12 12:24:39,365] Installer running.
+[2016-05-12 12:24:39,365] Command Line Arguments:
+[2016-05-12 12:24:39,365] ['/tmp/vmis.Le8LcC/install/vmware-installer/vmware-installer.py', '--set-setting', 'vmware-installer', 'libconf', '/tmp/vmis.Le8LcC/install/vmware-installer/lib/libconf', '--install-component', '/tmp/vmis.Le8LcC/install/vmware-installer', '--install-bundle', '/home/nextkara/\xe4\xb8\x8b\xe8\xbd\xbd/./VMware-Workstation-Full-12.1.0-3272444.x86_64.bundle', '']
+[2016-05-12 12:24:39,565] Successfully loaded GTK libraries.
+[2016-05-12 12:24:39,630] Using UI type gtk
+[2016-05-12 12:24:39,648] Opening database file /etc/vmware-installer/database
+[2016-05-12 12:24:41,029] Could not locate installer App Control.
+[2016-05-12 12:24:41,034] Opening database file /etc/vmware-installer/database
+[2016-05-12 12:24:41,860] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:42,122] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:42,180] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:42,265] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:42,347] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:42,637] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:42,672] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:42,722] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:42,772] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:42,805] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:42,836] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:42,905] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:42,981] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:43,039] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:43,072] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:43,368] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:43,405] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/update.py already exists, overwriting.
+[2016-05-12 12:24:43,472] destination /tmp/tmpEpWYyS/.installer/10.0.5/__init__.py already exists, overwriting.
+[2016-05-12 12:24:43,530] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:43,563] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:43,593] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:43,688] destination /tmp/tmpEpWYyS/.installer/10.0.5/__init__.py already exists, overwriting.
+[2016-05-12 12:24:43,713] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/update.py already exists, overwriting.
+[2016-05-12 12:24:43,764] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:43,839] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:43,901] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:43,939] destination /tmp/tmpEpWYyS/.installer/10.0.5/__init__.py already exists, overwriting.
+[2016-05-12 12:24:43,964] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:43,989] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/update.py already exists, overwriting.
+[2016-05-12 12:24:44,039] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:44,084] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:44,222] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:44,297] destination /tmp/tmpEpWYyS/.installer/10.0.5/__init__.py already exists, overwriting.
+[2016-05-12 12:24:44,364] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/update.py already exists, overwriting.
+[2016-05-12 12:24:44,414] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:44,476] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:44,514] destination /tmp/tmpEpWYyS/.installer/10.0.5/__init__.py already exists, overwriting.
+[2016-05-12 12:24:44,613] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/update.py already exists, overwriting.
+[2016-05-12 12:24:44,702] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:44,880] destination /tmp/tmpEpWYyS/.installer/10.0.5/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:45,469] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:45,573] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:45,597] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:45,630] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:45,664] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:45,756] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:46,189] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:46,247] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:46,314] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:46,397] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:46,854] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:47,139] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:47,231] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:47,289] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:47,355] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:47,472] destination /tmp/tmpEpWYyS/.installer/1.15.2/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:47,597] destination /tmp/tmpEpWYyS/.installer/1.15.2/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:47,647] destination /tmp/tmpEpWYyS/.installer/1.15.2/__init__.py already exists, overwriting.
+[2016-05-12 12:24:47,722] destination /tmp/tmpEpWYyS/.installer/1.15.2/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:47,780] destination /tmp/tmpEpWYyS/.installer/1.15.2/include/update.py already exists, overwriting.
+[2016-05-12 12:24:47,939] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/systemType.py already exists, overwriting.
+[2016-05-12 12:24:47,980] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/initscript.py already exists, overwriting.
+[2016-05-12 12:24:48,048] destination /tmp/tmpEpWYyS/.installer/12.1.0/__init__.py already exists, overwriting.
+[2016-05-12 12:24:48,130] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/update.py already exists, overwriting.
+[2016-05-12 12:24:48,180] destination /tmp/tmpEpWYyS/.installer/12.1.0/include/versions.py already exists, overwriting.
+[2016-05-12 12:24:48,843] Not running in a virtual machine.
+
+[2016-05-12 12:24:48,845] Running on a real machine!
+[2016-05-12 12:24:48,891] 4096
+
+[2016-05-12 12:24:53,411] Cannot use vmware-app-control to shut down open VMs, defaulting to fallback message.
+[2016-05-12 12:24:53,440] Ignored execution error: [Errno 2] No such file or directory when running command: [None, 'stoppable']
+[2016-05-12 12:26:00,895] This system has KVM enabled. You cannot run VMs with KVM enabled.
+[2016-05-12 12:26:39,486] 4.1.20-11-default
+
+[2016-05-12 12:27:00,399] Attempting to change symlink /usr/lib/vmware/bin/vmware-modconfig to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:27:00,400] Attempting to change symlink /usr/lib/vmware/bin/vmware-modconfig-console to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:27:00,400] Attempting to change symlink /usr/lib/vmware/bin/vmware-gksu to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:27:00,400] Attempting to change symlink /usr/lib/vmware/bin/vmware-vmblock-fuse to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:27:00,927] Prelink not present, skipping configuration.
+[2016-05-12 12:27:05,147] Configuring Bridged network vmnet0
+Configuring hostonly network vmnet1, probing for unused subnet ...
+Configuring NAT network vmnet8, probing for unused subnet ...
+Configured default networks - Bridged, Hostonly, NAT
+
+[2016-05-12 12:27:05,423] Installed Service: vmware
+[2016-05-12 12:27:05,658] Stopping VMware services:
+   VMware Authentication Daemon[71G done
+   VM communication interface socket family[71G done
+   Virtual machine communication interface[71G done
+   Virtual machine monitor[71G done
+   Blocking file system[71G done
+
+[2016-05-12 12:27:05,890] Starting VMware services:
+   Virtual machine monitor[71Gfailed
+   Virtual machine communication interface[71G done
+   VM communication interface socket family[71G done
+   Blocking file system[71G done
+   Virtual ethernet[71Gfailed
+   VMware Authentication Daemon[71G done
+
+[2016-05-12 12:27:07,215] Failed to get gcc information.
+
+[2016-05-12 12:27:07,220] Unable to install kernel modules
+[2016-05-12 12:27:07,223] stdout: 
+[2016-05-12 12:27:07,226] stderr: Failed to get gcc information.
+
+[2016-05-12 12:27:20,010] Error running command: ['gnome-panel', '--version']
+[2016-05-12 12:27:20,011] Traceback (most recent call last):
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/remoteinstaller.py", line 301, in MessageIn
+    ret = method(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/installer.py", line 333, in RunCommand
+    return self.proxyObject.RunCommand(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/localinstallerops.py", line 224, in RunCommand
+    return shell.run(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/util/shell.py", line 203, in run
+    retval = run_(program, args, kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/util/shell.py", line 126, in run_
+    close_fds=True, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/python/lib/subprocess.py", line 593, in __init__
+    errread, errwrite)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/python/lib/subprocess.py", line 1051, in _execute_child
+    raise child_exception
+
+OSError: [Errno 2] No such file or directory
+
+[2016-05-12 12:27:20,015] gnome-panel not found, updating GTK icon cache anyway
+[2016-05-12 12:27:52,753] Unknown media type in type 'all/all'
+Unknown media type in type 'all/allfiles'
+
+[2016-05-12 12:27:52,947] Error in file "/usr/share/applications/fcitx-skin-installer.desktop": "" is an invalid MIME type ("" does not contain a subtype)
+
+[2016-05-12 12:28:01,291] Installed Service: vmware-USBArbitrator
+[2016-05-12 12:28:01,346] [71Gfailed
+
+[2016-05-12 12:28:01,354] Unable to stop current USB Arbitrator service.  Not fatal.
+[2016-05-12 12:28:01,395] [71G done
+
+[2016-05-12 12:28:33,749] Attempting to change symlink /usr/lib/vmware/bin/thnuclnt to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/vmplayer to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/vmware-enter-serial to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/licenseTool to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/vmware-unity-helper to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/vmware-fuseUI to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/vmware-app-control to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:33,750] Attempting to change symlink /usr/lib/vmware/bin/vmware-zenity to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:28:35,027] gconfd-2: no process found
+
+[2016-05-12 12:28:35,055] Error running command: ['gnome-panel', '--version']
+[2016-05-12 12:28:35,055] Traceback (most recent call last):
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/remoteinstaller.py", line 301, in MessageIn
+    ret = method(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/installer.py", line 333, in RunCommand
+    return self.proxyObject.RunCommand(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/localinstallerops.py", line 224, in RunCommand
+    return shell.run(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/util/shell.py", line 203, in run
+    retval = run_(program, args, kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/util/shell.py", line 126, in run_
+    close_fds=True, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/python/lib/subprocess.py", line 593, in __init__
+    errread, errwrite)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/python/lib/subprocess.py", line 1051, in _execute_child
+    raise child_exception
+
+OSError: [Errno 2] No such file or directory
+
+[2016-05-12 12:28:35,060] gnome-panel not found, updating GTK icon cache anyway
+[2016-05-12 12:29:26,337] Unknown media type in type 'all/all'
+Unknown media type in type 'all/allfiles'
+
+[2016-05-12 12:29:26,370] Error in file "/usr/share/applications/fcitx-skin-installer.desktop": "" is an invalid MIME type ("" does not contain a subtype)
+
+[2016-05-12 12:29:26,992] Stopping VMware services:
+   VMware Authentication Daemon[71G done
+   VM communication interface socket family[71G done
+   Virtual machine communication interface[71G done
+   Virtual machine monitor[71G done
+   Blocking file system[71G done
+
+[2016-05-12 12:29:27,304] Starting VMware services:
+   Virtual machine monitor[71Gfailed
+   Virtual machine communication interface[71G done
+   VM communication interface socket family[71G done
+   Blocking file system[71G done
+   Virtual ethernet[71Gfailed
+   VMware Authentication Daemon[71G done
+
+[2016-05-12 12:29:37,630] Installed Service: vmware-workstation-server
+[2016-05-12 12:29:38,767]    Starting Workstation Server:[71Gfailed
+
+[2016-05-12 12:29:56,252] Attempting to change symlink /usr/lib/vmware/bin/vmware to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:29:56,254] Attempting to change symlink /usr/lib/vmware/bin/vmware-tray to permission 755. Operation is not allowed, skipping.
+[2016-05-12 12:29:56,709] Error running command: ['gnome-panel', '--version']
+[2016-05-12 12:29:56,709] Traceback (most recent call last):
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/remoteinstaller.py", line 301, in MessageIn
+    ret = method(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/installer.py", line 333, in RunCommand
+    return self.proxyObject.RunCommand(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/core/localinstallerops.py", line 224, in RunCommand
+    return shell.run(*args, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/util/shell.py", line 203, in run
+    retval = run_(program, args, kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/vmis/util/shell.py", line 126, in run_
+    close_fds=True, **kwargs)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/python/lib/subprocess.py", line 593, in __init__
+    errread, errwrite)
+
+  File "/tmp/vmis.Le8LcC/install/vmware-installer/python/lib/subprocess.py", line 1051, in _execute_child
+    raise child_exception
+
+OSError: [Errno 2] No such file or directory
+
+[2016-05-12 12:29:56,715] gnome-panel not found, updating GTK icon cache anyway
+[2016-05-12 12:30:38,454] Unknown media type in type 'all/all'
+Unknown media type in type 'all/allfiles'
+
+[2016-05-12 12:30:38,494] Error in file "/usr/share/applications/fcitx-skin-installer.desktop": "" is an invalid MIME type ("" does not contain a subtype)
+
+[2016-05-12 12:30:38,807] Stopping VMware services:
+   VMware Authentication Daemon[71G done
+   VM communication interface socket family[71G done
+   Virtual machine communication interface[71G done
+   Virtual machine monitor[71G done
+   Blocking file system[71G done
+
+[2016-05-12 12:30:38,940] Starting VMware services:
+   Virtual machine monitor[71Gfailed
+   Virtual machine communication interface[71G done
+   VM communication interface socket family[71G done
+   Blocking file system[71G done
+   Virtual ethernet[71Gfailed
+   VMware Authentication Daemon[71G done
+
+[2016-05-12 13:03:14,442] 
+[2016-05-12 13:03:14,442] 
+[2016-05-12 13:03:14,443] Installer running.
+[2016-05-12 13:03:14,443] Command Line Arguments:
+[2016-05-12 13:03:14,443] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/lib/modules/4.1.20-11-default/misc/vmmon.ko']
+[2016-05-12 13:03:14,747] Successfully loaded GTK libraries.
+[2016-05-12 13:03:14,779] Using UI type gtk
+[2016-05-12 13:03:14,794] System installer version is: 2.1.0.3215781
+[2016-05-12 13:03:14,794] Running installer version is: 2.1.0.3215781
+[2016-05-12 13:03:14,795] Opening database file /etc/vmware-installer/database
+[2016-05-12 13:03:14,999] 
+[2016-05-12 13:03:14,999] 
+[2016-05-12 13:03:14,999] Installer running.
+[2016-05-12 13:03:14,999] Command Line Arguments:
+[2016-05-12 13:03:14,999] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/usr/lib/vmware/symvers/vmmon-4.1.20-11-default']
+[2016-05-12 13:03:15,055] Successfully loaded GTK libraries.
+[2016-05-12 13:03:15,061] Using UI type gtk
+[2016-05-12 13:03:15,062] System installer version is: 2.1.0.3215781
+[2016-05-12 13:03:15,062] Running installer version is: 2.1.0.3215781
+[2016-05-12 13:03:15,062] Opening database file /etc/vmware-installer/database
+[2016-05-12 13:03:18,468] 
+[2016-05-12 13:03:18,468] 
+[2016-05-12 13:03:18,468] Installer running.
+[2016-05-12 13:03:18,468] Command Line Arguments:
+[2016-05-12 13:03:18,469] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/lib/modules/4.1.20-11-default/misc/vmnet.ko']
+[2016-05-12 13:03:18,527] Successfully loaded GTK libraries.
+[2016-05-12 13:03:18,533] Using UI type gtk
+[2016-05-12 13:03:18,534] System installer version is: 2.1.0.3215781
+[2016-05-12 13:03:18,534] Running installer version is: 2.1.0.3215781
+[2016-05-12 13:03:18,534] Opening database file /etc/vmware-installer/database
+[2016-05-12 13:03:18,743] 
+[2016-05-12 13:03:18,743] 
+[2016-05-12 13:03:18,743] Installer running.
+[2016-05-12 13:03:18,743] Command Line Arguments:
+[2016-05-12 13:03:18,743] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/usr/lib/vmware/symvers/vmnet-4.1.20-11-default']
+[2016-05-12 13:03:18,799] Successfully loaded GTK libraries.
+[2016-05-12 13:03:18,805] Using UI type gtk
+[2016-05-12 13:03:18,806] System installer version is: 2.1.0.3215781
+[2016-05-12 13:03:18,806] Running installer version is: 2.1.0.3215781
+[2016-05-12 13:03:18,807] Opening database file /etc/vmware-installer/database
+[2016-06-01 20:00:35,887] 
+[2016-06-01 20:00:35,889] 
+[2016-06-01 20:00:35,890] Installer running.
+[2016-06-01 20:00:35,890] Command Line Arguments:
+[2016-06-01 20:00:35,890] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/lib/modules/4.1.21-14-default/misc/vmmon.ko']
+[2016-06-01 20:00:36,227] Successfully loaded GTK libraries.
+[2016-06-01 20:00:36,257] Using UI type gtk
+[2016-06-01 20:00:36,271] System installer version is: 2.1.0.3215781
+[2016-06-01 20:00:36,271] Running installer version is: 2.1.0.3215781
+[2016-06-01 20:00:36,271] Opening database file /etc/vmware-installer/database
+[2016-06-01 20:00:36,631] 
+[2016-06-01 20:00:36,631] 
+[2016-06-01 20:00:36,631] Installer running.
+[2016-06-01 20:00:36,631] Command Line Arguments:
+[2016-06-01 20:00:36,631] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/usr/lib/vmware/symvers/vmmon-4.1.21-14-default']
+[2016-06-01 20:00:36,709] Successfully loaded GTK libraries.
+[2016-06-01 20:00:36,714] Using UI type gtk
+[2016-06-01 20:00:36,715] System installer version is: 2.1.0.3215781
+[2016-06-01 20:00:36,715] Running installer version is: 2.1.0.3215781
+[2016-06-01 20:00:36,716] Opening database file /etc/vmware-installer/database
+[2016-06-01 20:00:40,640] 
+[2016-06-01 20:00:40,641] 
+[2016-06-01 20:00:40,641] Installer running.
+[2016-06-01 20:00:40,641] Command Line Arguments:
+[2016-06-01 20:00:40,641] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/lib/modules/4.1.21-14-default/misc/vmnet.ko']
+[2016-06-01 20:00:40,718] Successfully loaded GTK libraries.
+[2016-06-01 20:00:40,724] Using UI type gtk
+[2016-06-01 20:00:40,726] System installer version is: 2.1.0.3215781
+[2016-06-01 20:00:40,726] Running installer version is: 2.1.0.3215781
+[2016-06-01 20:00:40,726] Opening database file /etc/vmware-installer/database
+[2016-06-01 20:00:40,956] 
+[2016-06-01 20:00:40,957] 
+[2016-06-01 20:00:40,957] Installer running.
+[2016-06-01 20:00:40,957] Command Line Arguments:
+[2016-06-01 20:00:40,958] ['/usr/lib/vmware-installer/2.1.0/vmware-installer.py', '--register-file', 'vmware-vmx', 'regular', '/usr/lib/vmware/symvers/vmnet-4.1.21-14-default']
+[2016-06-01 20:00:41,018] Successfully loaded GTK libraries.
+[2016-06-01 20:00:41,025] Using UI type gtk
+[2016-06-01 20:00:41,026] System installer version is: 2.1.0.3215781
+[2016-06-01 20:00:41,027] Running installer version is: 2.1.0.3215781
+[2016-06-01 20:00:41,027] Opening database file /etc/vmware-installer/database

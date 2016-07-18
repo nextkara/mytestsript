@@ -22,7 +22,7 @@ widget = Label(None, text = 'hello GUI world')
 widget.pack(expand = YES, fill = BOTH)
 widget.mainloop()
 win.mainloop()
-'''
+
 class Hello:
     def __init__(self, parent=None):
         self.top = Frame(parent)
@@ -42,3 +42,6 @@ class Hello:
             print('on')
 if __name__ == '__main__':
     Hello().top.mainloop()
+    
+'''
+
