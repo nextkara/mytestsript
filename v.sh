@@ -2,12 +2,10 @@
 read -e "This program is using for install virtualbox" BOXV
 
 if [ $BOXV == "y" ];then
-
-apt-get install virtualbox -y
-apt-get install virtualbox-dkms -y
-apt-get install virtualbox-source -y
-apt-get install virtualbox-qt -y
-
+    yum install virtualbox -y
+    yum install virtualbox-dkms -y
+    yum install virtualbox-source -y
+    yum install virtualbox-qt -y
 else
-echo "Wrong ! program is quiting ...."
+    echo "Wrong ! program is quiting ...."
 fi

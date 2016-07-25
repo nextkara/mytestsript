@@ -7,10 +7,15 @@ def interact():
         except EOFError:
             break
         except KeyboardInterrupt:
+            print('KeyboardInterrupt')
+            #raise KeyboardInterrupt
             break
         else:
-            num = int(reply)
-            print("%d squared is %d " % (num, num ** 2 ))
+            try:
+                num = int(reply)
+                print("%d squared is %d " % (num, num ** 2 ))
+            except ValueError:
+                print('you put a wrong type, please input again..')
     print("bye")
 if __name__ == "__main__":
     interact()
