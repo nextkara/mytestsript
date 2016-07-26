@@ -107,12 +107,50 @@ sed 's/^#[[:space:]]{1,}/&/'
 #0、查找/var目录属主为root，且属组为mail的所有文件；
 [nextkara@VM_82_212_centos ~]$ find /var -user root -group mail 
 ##、查找/usr目录下不属于root、bin或hadoop的所有文件；
+[root@localhost ~]# find /usr -not -user root -o -not -user bin  |head
+/usr
+/usr/bin
+/usr/bin/nroff
+/usr/bin/comm
+/usr/bin/catchsegv
+/usr/bin/pic
+/usr/bin/cp
+/usr/bin/gencat
+/usr/bin/post-grohtml
+/usr/bin/getent
 
 ##、查找/etc目录下最近一周内其内容修改过，且属主不为root或hadoop的所有文件；
+[root@localhost ~]# find /etc -not -user root -o -not -user hadoop -atime -7
+/etc
+/etc/fstab
+/etc/crypttab
+/etc/mtab
+/etc/resolv.conf
+/etc/pki
+/etc/pki/rpm-gpg
+/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Debug-7
+/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Testing-7
 
 ##、查找当前系统上没有属主或属组，且最近一周内曾被访问过的所有文件；
+[root@localhost ~]# find / -nouser -o -nogroup -atime -7
+find: ‘/proc/3422/task/3422/fd/6’: 没有那个文件或目录
+find: ‘/proc/3422/task/3422/fdinfo/6’: 没有那个文件或目录
+find: ‘/proc/3422/fd/6’: 没有那个文件或目录
+find: ‘/proc/3422/fdinfo/6’: 没有那个文件或目录
 
 ##、查找/etc目录下大于20k且类型为普通文件的所有文件；
+[root@localhost ~]# find /etc -size -20k -ls 
+16777345   12 drwxr-xr-x  77 root     root         8192 7月 18 14:41 /etc
+16777346    4 -rw-r--r--   1 root     root          501 4月  8 19:09 /etc/fstab
+16777347    0 -rw-------   1 root     root            0 4月  8 19:09 /etc/crypttab
+16777348    0 lrwxrwxrwx   1 root     root           17 4月  8 19:09 /etc/mtab -> /proc/self/mounts
+18353673    4 -rw-r--r--   1 root     root           73 7月 18 14:23 /etc/resolv.conf
+33595531    0 drwxr-xr-x   9 root     root           91 5月 12 17:59 /etc/pki
+50331789    0 drwxr-xr-x   2 root     root          101 4月  8 19:09 /etc/pki/rpm-gpg
+50331790    4 -rw-r--r--   1 root     root         1690 12月  9  2015 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+50331791    4 -rw-r--r--   1 root     root         1004 12月  9  2015 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Debug-7
+50331792    4 -rw-r--r--   1 root     root         1690 12月  9  2015 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Testing-7
 
 ##、查找/etc目录下所有用户都没有写权限的文件；
 
