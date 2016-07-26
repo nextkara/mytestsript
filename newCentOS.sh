@@ -14,4 +14,5 @@ yum install -y vim
 yum install -y tree
 yum install -y gcc
 yum install -y finger
+yum install -y wget
 

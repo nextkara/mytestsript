@@ -104,9 +104,10 @@ sed 's/\/etc\/sysconfig\/init/\/var\/log/'
   vim 末行模式下 : %s/\/etc\/sysconfig\/init/\/var\/log/
 #、删除/tmp/functions文件中所以#开头，且#后面至少跟了一个空白字符的行的行首#;
 sed 's/^#[[:space:]]{1,}/&/'
-#0、查找/var目录属主为root，且属组为mail的所有文件；
+#0、查找/var目录属主为rooht，且属组为mail的所有文件；
 [nextkara@VM_82_212_centos ~]$ find /var -user root -group mail 
 ##、查找/usr目录下不属于root、bin或hadoop的所有文件；
+<<<<<<< HEAD
 [root@localhost ~]# find /usr -not -user root -o -not -user bin  |head
 /usr
 /usr/bin
@@ -139,6 +140,14 @@ find: ‘/proc/3422/task/3422/fdinfo/6’: 没有那个文件或目录
 find: ‘/proc/3422/fd/6’: 没有那个文件或目录
 find: ‘/proc/3422/fdinfo/6’: 没有那个文件或目录
 
+=======
+$ find /usr -not \(-user root | -user bin | -user hadoop\)
+$ find /usr -not -user root -a -not -user bin -a -not -user hadoop
+##、查找/etc目录下最近一周内其内容修改过，且属主不为root或hadoop的所有文件；
+$ find /etc -atime -7 -a -not -user root -a -not -user hadoop
+##、查找当前系统上没有属主或属组，且最近一周内曾被访问过的所有文件；
+$ find / -nouser -a -nogroup -a -atime -7
+>>>>>>> e351fa3a0a4e8169f0f38044b9dd4f85aff517f1
 ##、查找/etc目录下大于20k且类型为普通文件的所有文件；
 [root@localhost ~]# find /etc -size -20k -ls 
 16777345   12 drwxr-xr-x  77 root     root         8192 7月 18 14:41 /etc
