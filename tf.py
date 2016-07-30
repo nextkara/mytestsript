@@ -11,6 +11,10 @@ if not os.path.exists('z.py'):
 else:
     print('file exist!')
 '''
+'这段代码是输出终端大小行数到屏幕上'
+sz = os.get_terminal_size()
+print("your terminal size is \n" + "clumns:" + sz.clumns + "\n" + "line:" + sz.lines)
+#查看相关配置文件是否存在
 for x in fileList:
     print('check for ' + x +'....',)
     if os.path.exists(x):
@@ -19,6 +23,7 @@ for x in fileList:
     else:
         print('no')
         Flag = i
+
 if i == 4:
     print('Makefile created already')
 else:
