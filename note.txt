@@ -4,4 +4,8 @@ ssh-keygen -t rsa
 ssh-copy-id -i ~/.ssh/id_rsa.pub
 #复制文件到服务器端
 scp /local/file root@192.168.3.102:/root/directory/for/file
+软链接文件
+路径
+原始文件的相对路径：相对与软链接文件路径，而不是相对于当前工作目录
 
+I/O 重定向：改变默认位置
