@@ -1,0 +1,8 @@
+CRITICAL:root:Host www.nextkara.net unknow
+ERROR:root:Couldn't find 'spam'
+CRITICAL:root:Host www.nextkara.net unknow
+ERROR:root:Couldn't find 'spam'
+WARNING:root:Feature is deprecated
+CRITICAL:2016-07-30 11:42:28,915:Host www.nextkara.net unknow
+ERROR:2016-07-30 11:42:28,916:Couldn't find 'spam'
+WARNING:2016-07-30 11:42:28,916:Feature is deprecated

@@ -1,0 +1,84 @@
+Jul 31 14:45:49 INFO --- logging initialized ---
+Jul 31 15:46:49 INFO --- logging initialized ---
+Jul 31 16:47:01 INFO --- logging initialized ---
+Jul 31 16:48:34 INFO --- logging initialized ---
+Jul 31 16:49:41 INFO --- logging initialized ---
+Jul 31 16:54:49 INFO Installed: liblockfile-1.09-4.fc24.x86_64
+Jul 31 16:54:50 INFO Installed: libesmtp-1.0.6-10.fc24.x86_64
+Jul 31 16:54:50 INFO Installed: esmtp-1.2-3.fc24.x86_64
+Jul 31 16:54:51 INFO Installed: util-linux-user-2.28-3.fc24.x86_64
+Jul 31 16:54:51 INFO Installed: spax-1.5.3-6.fc24.x86_64
+Jul 31 16:54:51 INFO Installed: redhat-lsb-submod-security-4.1-32.fc24.x86_64
+Jul 31 16:54:52 INFO Installed: patch-2.7.5-3.fc24.x86_64
+Jul 31 16:54:52 INFO Installed: mailx-12.5-19.fc24.x86_64
+Jul 31 16:54:52 INFO Installed: m4-1.4.17-9.fc24.x86_64
+Jul 31 16:54:53 INFO Installed: redhat-lsb-core-4.1-32.fc24.x86_64
+Jul 31 17:47:49 INFO --- logging initialized ---
+Jul 31 18:48:30 INFO --- logging initialized ---
+Jul 31 19:11:36 INFO --- logging initialized ---
+Jul 31 19:58:29 INFO --- logging initialized ---
+Jul 31 19:58:41 INFO Installed: kchmviewer-common-7.5-3.fc24.noarch
+Jul 31 19:58:41 INFO Installed: kchmviewer-7.5-3.fc24.x86_64
+Jul 31 20:12:36 INFO --- logging initialized ---
+Jul 31 21:13:36 INFO --- logging initialized ---
+Aug 01 08:03:31 INFO --- logging initialized ---
+Aug 01 08:46:38 INFO --- logging initialized ---
+Aug 01 09:43:24 INFO --- logging initialized ---
+Aug 01 09:43:31 INFO Installed: htop-2.0.2-1.fc24.x86_64
+Aug 01 09:45:49 INFO --- logging initialized ---
+Aug 01 09:46:04 INFO --- logging initialized ---
+Aug 01 09:46:58 INFO --- logging initialized ---
+Aug 01 09:47:08 INFO --- logging initialized ---
+Aug 01 10:47:58 INFO --- logging initialized ---
+Aug 01 11:48:58 INFO --- logging initialized ---
+Aug 01 11:51:35 INFO --- logging initialized ---
+Aug 01 11:51:58 INFO Erased: calligra-l10n-zh_CN-2.9.11-2.fc24.noarch
+Aug 01 11:51:58 INFO Erased: calligra-words-libs-2.9.11-4.fc24.x86_64
+Aug 01 11:51:59 INFO Erased: calligra-words-2.9.11-4.fc24.x86_64
+Aug 01 11:51:59 INFO Erased: calligra-stage-libs-2.9.11-4.fc24.x86_64
+Aug 01 11:52:00 INFO Erased: calligra-stage-2.9.11-4.fc24.x86_64
+Aug 01 11:52:26 INFO Erased: calligra-sheets-libs-2.9.11-4.fc24.x86_64
+Aug 01 11:52:27 INFO Erased: calligra-sheets-2.9.11-4.fc24.x86_64
+Aug 01 11:52:27 INFO Erased: calligra-l10n-2.9.11-2.fc24.noarch
+Aug 01 11:52:28 INFO Erased: calligra-core-2.9.11-4.fc24.x86_64
+Aug 01 11:52:54 INFO Erased: calligra-libs-2.9.11-4.fc24.x86_64
+Aug 01 11:52:55 INFO Erased: soprano-2.9.4-14.fc24.x86_64
+Aug 01 11:52:55 INFO Erased: redland-1.0.17-7.fc24.x86_64
+Aug 01 11:52:56 INFO Erased: libetonyek-0.1.6-4.fc24.x86_64
+Aug 01 11:52:56 INFO Erased: libwpg-0.3.1-2.fc24.x86_64
+Aug 01 11:52:56 INFO Erased: libwpd-0.10.1-2.fc24.x86_64
+Aug 01 11:52:57 INFO Erased: rasqal-0.9.33-2.fc24.x86_64
+Aug 01 11:52:57 INFO Erased: raptor2-2.0.15-6.fc24.x86_64
+Aug 01 11:52:58 INFO Erased: libodfgen-0.1.6-3.fc24.x86_64
+Aug 01 11:52:58 INFO Erased: libwps-0.4.3-1.fc24.x86_64
+Aug 01 11:52:58 INFO Erased: lyx-fonts-2.2.0-1.fc24.noarch
+Aug 01 11:52:59 INFO Erased: librevenge-0.0.4-3.fc24.x86_64
+Aug 01 11:52:59 INFO Erased: yajl-2.1.0-5.fc24.x86_64
+Aug 01 11:53:00 INFO Erased: liblangtag-0.6.0-1.fc24.x86_64
+Aug 01 11:53:00 INFO Erased: clucene-core-2.3.3.4-24.20130812.e8e3d20git.fc24.x86_64
+Aug 01 11:53:01 INFO Erased: calligra-kdchart-2.9.11-4.fc24.x86_64
+Aug 01 11:53:01 INFO Erased: libspnav-0.2.3-3.fc24.x86_64
+Aug 02 08:05:13 INFO --- logging initialized ---
+Aug 02 09:06:33 INFO --- logging initialized ---
+Aug 02 10:06:54 INFO --- logging initialized ---
+Aug 02 11:07:33 INFO --- logging initialized ---
+Aug 02 12:08:33 INFO --- logging initialized ---
+Aug 02 13:09:33 INFO --- logging initialized ---
+Aug 02 14:09:36 INFO --- logging initialized ---
+Aug 02 14:29:00 INFO --- logging initialized ---
+Aug 02 14:29:13 INFO --- logging initialized ---
+Aug 02 14:34:07 INFO Installed: tzdata-java-2016f-1.fc24.noarch
+Aug 02 14:34:07 INFO Installed: lksctp-tools-1.0.16-5.fc24.x86_64
+Aug 02 14:34:08 INFO Installed: python3-cssselect-0.9.1-9.fc24.noarch
+Aug 02 14:34:08 INFO Installed: python3-lxml-3.4.4-4.fc24.x86_64
+Aug 02 14:34:09 INFO Installed: python3-javapackages-4.6.0-14.fc24.noarch
+Aug 02 14:34:09 INFO Installed: javapackages-tools-4.6.0-14.fc24.noarch
+Aug 02 14:34:10 INFO Installed: lua-posix-33.3.1-2.fc24.x86_64
+Aug 02 14:34:10 INFO Installed: copy-jdk-configs-1.1-4.fc24.noarch
+Aug 02 14:34:17 INFO Installed: java-1.8.0-openjdk-headless-1:1.8.0.101-1.b14.fc24.x86_64
+Aug 02 14:34:18 INFO Installed: ttmkfdir-3.0.9-48.fc24.x86_64
+Aug 02 14:34:19 INFO Installed: xorg-x11-fonts-Type1-7.5-16.fc24.noarch
+Aug 02 14:34:19 INFO Installed: java-1.8.0-openjdk-1:1.8.0.101-1.b14.fc24.x86_64
+Aug 02 14:34:21 INFO Installed: java-1.8.0-openjdk-devel-1:1.8.0.101-1.b14.fc24.x86_64
+Aug 02 15:10:33 INFO --- logging initialized ---
+Aug 02 16:11:32 INFO --- logging initialized ---
